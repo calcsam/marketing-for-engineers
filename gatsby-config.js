@@ -13,6 +13,7 @@ module.exports = {
     }
   },
   'gatsby-plugin-postcss',
+  `gatsby-plugin-netlify`,
   `gatsby-plugin-mdx`,
      {
        resolve: `gatsby-source-filesystem`,
