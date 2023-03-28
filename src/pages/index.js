@@ -135,11 +135,11 @@ const IndexPage = () => {
       <ul className="list-disc">
         <li className="group relative hover:text-blue-500 cursor-pointer">
           <b>feels unnatural.</b> Sophisticated users can spot marketers who don't understand their product. 
-          <img class="hidden group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] -top-44" src="./fellow-kids.jpg" alt="Your image"></img>
+          <img class="hidden sm:group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] top-[calc(-25vw+170px)] mt-5" src="./fellow-kids.jpg" alt="Your image"></img>
         </li>
         <li className="group relative hover:text-blue-500 cursor-pointer">
           <b>lacks domain knowledge.</b> Engineers will <i>happily</i> trade attention to get (or give) useful information. Or watch interesting flamewars.
-          <img class="hidden group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] -top-44" src="./duty_calls.png" alt="Your image"></img>
+          <img class="hidden sm:group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] top-[calc(-25vw+190px)] mt-5" src="./duty_calls.png" alt="Your image"></img>
         </li>      
       </ul>
       <p>
