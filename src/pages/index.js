@@ -1,18 +1,15 @@
 import * as React from "react"
 
+import ConvertKitForm from 'convertkit-react'
+
+const MY_FORM_ID = 4992067
+
 const pageStyles = {
-  color: "#232129",
   padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
 }
-const headingAccentStyles = {
-  color: "#663399",
-}
+
 const paragraphStyles = {
   marginBottom: 48,
 }
@@ -122,51 +119,62 @@ const links = [
     color: "#663399",
   },
 ]
-
+// dark:prose-invert dark:prose-headings:text-slate-300  dark:prose-a:text-blue-400
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
+    <main style={pageStyles} className="container mx-auto px-4 sm:px-6 max-w-2xl prose prose-m lg:prose-lg prose-md prose-headings:font-sans prose-headings:font-bold prose-a:text-blue-600 prose-img:rounded-md prose-img:shadow-lg mt-8">
+      <h1>
+        Marketing for Engineers
       </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
+      <p className="prose prose-lg lg:prose-xl prose-slate">
+        <span className="font-semibold">Most engineers distrust marketing.</span> And for good reason. 
       </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
+      <p>
+        Most software marketing: 
+      </p>
+      <ul className="list-disc">
+        <li className="group relative hover:text-blue-500 cursor-pointer">
+          <b>feels unnatural.</b> Sophisticated users can spot marketers who don't understand their product. 
+          <img class="hidden group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] -top-44" src="./fellow-kids.jpg" alt="Your image"></img>
         </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
+        <li className="group relative hover:text-blue-500 cursor-pointer">
+          <b>lacks domain knowledge.</b> Engineers will <i>happily</i> trade attention to get (or give) useful information. Or watch interesting flamewars.
+          <img class="hidden group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] -top-44" src="./duty_calls.png" alt="Your image"></img>
+        </li>      
       </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+      <p>
+        One possibility: if most marketing is mediocre, <span className="font-semibold">being able to market well is actually a superpower</span>, because it's a breath of fresh air to other engineers. 
+      </p>
+      <p>
+        <b>Hi, I'm Sam</b>. <a href="https://twitter.com/calcsam">I'm an engineer</a> and founder. Six years ago I cofounded <a href="https://twitter.com/gatsbyjs">@gatsbyjs</a> to turn the open-source project into a company. We built a 50-person org, raised venture capital, grew to a few million dollars in revenue, and sold to our largest competitor, Netlify.
+      </p>
+      <p>
+        As Gatsby matured, I found myself doing more and more things that fell under "marketing."
+      </p>
+      <p> 
+        I wrote customer stories. Ran webinars. Organized the docs. Delivered conference talks. Tweaked lead scoring. Edited launch announcements. Talked to press. Published a book.
+      </p>
+      <p>
+        If a pianist picks up the sax, are they a jazz band?
+      </p>
+      <p>
+        In a year or two, I'll probably start something new. But until then, I'll be sharing my lessons here, along with other engineers who've ended up as marketing experts.
+      </p>
+      <p>
+        You'll probably find this interesting if:
+      </p>
+      <ul className="list-disc">
+        <li>
+          you work at a startup or small company, or with marketing: <b>product engineer</b>, <b>web developer</b>, <b>growth engineer</b>, <b>marketing engineer</b>, <b>DevRel</b>...
+        </li>
+        <li>
+          or if you're thinking of starting a company, or already have: <b>indie hacker</b>, <b>bootstrapper</b>, <b>current or future founder</b>
+        </li>
+        <li>
+          or if you lead eng projects in a large organization and want more visibility/adoption: <b>staff engineer+</b>, <b>eng manager</b>, <b>eng director</b>... 
+        </li>
+      </ul>
+      <ConvertKitForm template='clare' formId={MY_FORM_ID} />
     </main>
   )
 }
