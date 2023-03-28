@@ -127,26 +127,32 @@ const IndexPage = () => {
         Marketing for Engineers
       </h1>
       <p className="prose prose-lg lg:prose-xl prose-slate">
-        <span className="font-semibold">Most engineers distrust marketing.</span> And for good reason. 
+        <span className="font-semibold">Why do engineers distrust marketing?</span>
       </p>
       <p>
-        Most software marketing: 
+        Engineers will give you a variety of reasons:
       </p>
       <ul className="list-disc">
         <li className="group relative hover:text-blue-500 cursor-pointer">
-          <b>feels unnatural.</b> Sophisticated users can spot marketers who don't understand their product. 
+          <b>Shallow and surface-level.</b> Most software marketers haven't used and don't understand the products they pitch.
           <img class="hidden sm:group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] top-[calc(-25vw+170px)] mt-5" src="./fellow-kids.jpg" alt="Your image"></img>
         </li>
+        <li className="">
+          <b>In the wrong tone.</b> Engineers find most marketing communications vague and overenthuasiastic. 
+        </li>
         <li className="group relative hover:text-blue-500 cursor-pointer">
-          <b>lacks domain knowledge.</b> Engineers will <i>happily</i> trade attention to get (or give) useful information. Or watch interesting flamewars.
+          <b>Reduces trust.</b> Engineers are <i>happy</i> to trade their attention, but expect useful information in return. 
           <img class="hidden sm:group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] top-[calc(-25vw+190px)] mt-5" src="./duty_calls.png" alt="Your image"></img>
         </li>      
       </ul>
       <p>
-        One possibility: if most marketing is mediocre, <span className="font-semibold">being able to market well is actually a superpower</span>, because it's a breath of fresh air to other engineers. 
+        Here's one irony. Engineers' marketing experience turns them skeptical of the whole field. Yet their depth, clarity, and rigor can make them quite talented marketers.       
       </p>
       <p>
-        <b>Hi, I'm Sam</b>. <a href="https://twitter.com/calcsam">I'm an engineer</a> and founder. Six years ago I cofounded <a href="https://twitter.com/gatsbyjs">@gatsbyjs</a> to turn the open-source project into a company. We built a 50-person org, raised venture capital, grew to a few million dollars in revenue, and sold to our largest competitor, Netlify.
+        And in a world with lots of mediocre marketing, <span className="font-semibold">being able to market well is actually a superpower</span>. 
+      </p>
+      <p>
+        <b>Hi, I'm Sam</b>. <a href="https://twitter.com/calcsam">I'm an engineer</a> and founder. Six years ago I cofounded <a href="https://twitter.com/gatsbyjs">@gatsbyjs</a> to turn the open-source project into a company. We grew to a few million dollars in revenue, and sold to our largest competitor, Netlify.
       </p>
       <p>
         As Gatsby matured, I found myself doing more and more things that fell under "marketing."
