@@ -5,5 +5,5 @@
 body { font-family: "Inter", sans-serif; }
 
 .formkit-powered-by-convertkit {
- display: none;
+ display: none !important;
 }
