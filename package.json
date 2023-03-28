@@ -30,5 +30,9 @@
     "gatsby-plugin-postcss": "^6.7.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
+  },
+  "engines" : { 
+    "npm" : ">=8.0.0",
+    "node" : ">=18.0.0"
   }
 }
