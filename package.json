@@ -22,6 +22,7 @@
     "gatsby-plugin-google-analytics": "^5.7.0",
     "gatsby-plugin-mdx": "^5.8.0",
     "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-transformer-remark": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -127,51 +127,23 @@ const IndexPage = () => {
         Marketing for Engineers
       </h1>
       <p className="prose prose-lg lg:prose-xl prose-slate">
-        <span className="font-semibold">Why do engineers distrust marketing?</span>
-      </p>
-      <p>
-        Engineers will give you a variety of reasons:
-      </p>
-      <ul className="list-disc">
-        <li className="group relative hover:text-blue-500 cursor-pointer">
-          <b>Shallow and surface-level.</b> Most software marketers haven't used and don't understand the products they pitch.
-          <img class="hidden sm:group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] top-[calc(-25vw+170px)] mt-5" src="./fellow-kids.jpg" alt="Your image"></img>
-        </li>
-        <li className="">
-          <b>In the wrong tone.</b> Engineers find most marketing communications vague and overenthuasiastic. 
-        </li>
-        <li className="group relative hover:text-blue-500 cursor-pointer">
-          <b>Reduces trust.</b> Engineers are <i>happy</i> to trade their attention, but expect useful information in return. 
-          <img class="hidden sm:group-hover:block absolute left-[calc(50%+270px)] w-[calc(50vw-320px)] max-w-[300px] top-[calc(-25vw+190px)] mt-5" src="./duty_calls.png" alt="Your image"></img>
-        </li>      
-      </ul>
-      <p>
-        Here's one irony. Engineers' marketing experience turns them skeptical of the whole field. Yet their depth, clarity, and rigor can make them quite talented marketers.       
-      </p>
-      <p>
-        And in a world with lots of mediocre marketing, <span className="font-semibold">being able to market well is actually a superpower</span>. 
+        <span className="font-semibold">Great marketing is rare.</span>
       </p>
       <p>
         <b>Hi, I'm Sam</b>. <a href="https://twitter.com/calcsam">I'm an engineer</a> and founder. Six years ago I cofounded <a href="https://twitter.com/gatsbyjs">@gatsbyjs</a> to turn the open-source project into a company. We grew to a few million dollars in revenue, and sold to our largest competitor, Netlify.
       </p>
       <p>
-        As Gatsby matured, I found myself doing more and more things that fell under "marketing."
+        As Gatsby matured, I ended up doing more and more "marketing" things. Over time, I found that great marketing required a similar kind of analytical depth, clarity of purpose, polish, and iteration as great engineering.
       </p>
       <p> 
-        I wrote customer stories. Ran webinars. Organized the docs. Delivered conference talks. Tweaked lead scoring. Edited launch announcements. Talked to press. Published a book.
-      </p>
-      <p>
-        If a pianist picks up the sax, are they a jazz band?
-      </p>
-      <p>
-        In a year or two, I'll probably start something new. But until then, I'll be sharing my lessons here, along with other engineers who've ended up as marketing experts.
+        We as engineers often distrust marketing. But that can be a mental block that stops us from growing. Being great at marketing is a force multiplier. <b>I'm going to share the path to getting there.</b>
       </p>
       <p>
         You'll probably find this interesting if:
       </p>
       <ul className="list-disc">
         <li>
-          you work at a startup or small company, or with marketing: <b>product engineer</b>, <b>web developer</b>, <b>growth engineer</b>, <b>marketing engineer</b>, <b>DevRel</b>...
+          you work at a startup or small company, or with marketing: <b>product engineer</b>, <b>web developer</b>, <b>growth engineer</b>, <b>marketing engineer</b>, <b>DevRel</b>.
         </li>
         <li>
           or if you're thinking of starting a company, or already have: <b>indie hacker</b>, <b>bootstrapper</b>, <b>current or future founder</b>
