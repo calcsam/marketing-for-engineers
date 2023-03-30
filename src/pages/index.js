@@ -1,12 +1,7 @@
 import * as React from "react"
 
-import ConvertKitForm from 'convertkit-react'
+import Layout from "../layout.js"
 
-const MY_FORM_ID = 4992067
-
-const pageStyles = {
-  padding: 96,
-}
 const headingStyles = {
 }
 
@@ -122,7 +117,7 @@ const links = [
 // dark:prose-invert dark:prose-headings:text-slate-300  dark:prose-a:text-blue-400
 const IndexPage = () => {
   return (
-    <main style={pageStyles} className="container mx-auto px-4 sm:px-6 max-w-2xl prose prose-m lg:prose-lg prose-md prose-headings:font-sans prose-headings:font-bold prose-a:text-blue-600 prose-img:rounded-md prose-img:shadow-lg mt-8">
+    <Layout>
       <h1>
         Marketing for Engineers
       </h1>
@@ -135,25 +130,10 @@ const IndexPage = () => {
       <p>
         As Gatsby matured, I ended up doing more and more "marketing" things. Over time, I found that great marketing required a similar kind of analytical depth, clarity of purpose, polish, and iteration as great engineering.
       </p>
-      <p> 
-        We as engineers often distrust marketing. But that can be a mental block that stops us from growing. Being great at marketing is a force multiplier. <b>I'm going to share the path to getting there.</b>
-      </p>
       <p>
-        You'll probably find this interesting if:
+        I'm sharing some things I learned along the way. If you're an engineer who's interested in marketing, you should sign up.
       </p>
-      <ul className="list-disc">
-        <li>
-          you work at a startup or small company, or with marketing: <b>product engineer</b>, <b>web developer</b>, <b>growth engineer</b>, <b>marketing engineer</b>, <b>DevRel</b>.
-        </li>
-        <li>
-          or if you're thinking of starting a company, or already have: <b>indie hacker</b>, <b>bootstrapper</b>, <b>current or future founder</b>
-        </li>
-        <li>
-          or if you lead eng projects in a large organization and want more visibility/adoption: <b>staff engineer+</b>, <b>eng manager</b>, <b>eng director</b>... 
-        </li>
-      </ul>
-      <ConvertKitForm template='clare' formId={MY_FORM_ID} />
-    </main>
+    </Layout>
   )
 }
 
