@@ -17,11 +17,15 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.15",
     "@fontsource/syne": "^4.5.13",
+    "@portabletext/react": "^2.0.2",
+    "@sanity/block-content-to-react": "^3.0.0",
     "convertkit-react": "^1.5.5",
     "gatsby": "^5.7.0",
     "gatsby-plugin-google-analytics": "^5.7.0",
+    "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-mdx": "^5.8.0",
     "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-source-sanity": "^7.6.3",
     "gatsby-transformer-remark": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

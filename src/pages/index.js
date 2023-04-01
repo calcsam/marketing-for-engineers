@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { Link, graphql} from 'gatsby'
 import Layout from "../layout.js"
 
 const headingStyles = {
@@ -115,7 +115,7 @@ const links = [
   },
 ]
 // dark:prose-invert dark:prose-headings:text-slate-300  dark:prose-a:text-blue-400
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <h1>
@@ -133,10 +133,37 @@ const IndexPage = () => {
       <p>
         I'm sharing some things I learned along the way. If you're an engineer who's interested in marketing, you should sign up.
       </p>
+      <ul>
+        {
+          data.allSanityPost.nodes.map((post) => {
+            return (
+              <li>
+                <span>{post.publishedAt}:</span>&nbsp;
+                <Link to={post.slug.current}><span>{post.title}</span></Link>
+              </li>
+            )
+          })
+        }
+      </ul>
+
     </Layout>
   )
 }
 
-export default IndexPage
-
 export const Head = () => <title>Home Page</title>
+
+export const pageQuery = graphql`
+  query HomePageQuery {
+    allSanityPost(sort: { fields: publishedAt, order: DESC }) {
+      nodes {
+        title
+        publishedAt(formatString: "MMMM DD, Y")
+        slug {
+          current
+        }
+      }
+    }
+  }
+`
+
+export default IndexPage
