@@ -1,6 +1,6 @@
 ---
 slug: /greshams-law-why-bad-marketing-drives-out-good
-title: "Gresham's law: why bad marketing
+title: "Gresham's law: why bad marketing drives out good"
 date: "2023-03-28T08:00:37.000Z"
 layout: post
 draft: false
@@ -12,7 +12,7 @@ The technical meaning of this term goes back to an era when "money" meant gold a
 
 A more modern formulation of this is "the market for lemons", a 1970 economics paper published by George Akerlof showing that if the quality of a good was difficult to measure (he gave the example of used cars). Akerlof went on to win the Nobel Prize for his work. Also to marry Janet Yellen, now the US Treasury Secretary.
 
-## Don't fight over well-tread ground.
+Don't fight over well-tread ground.
 
 The average US software engineer's time is worth $200/hr. The time of an underemployed college grad trying their hand at SEO is worth $20 / hr. The time of someone in a content farm in Eastern Europe or India is worth $2/hr. 
 
