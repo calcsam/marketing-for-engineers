@@ -3,14 +3,25 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Technical Marketing For Engineers`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Marketing For Engineers`,
+    siteUrl: `https://www.marketingforengineers.io`
   },
-  plugins: [{
-    resolve: 'gatsby-plugin-google-analytics',
+  plugins: [
+  {
+    resolve: `gatsby-plugin-google-analytics`,
     options: {
-      "trackingId": "G-C170X38Z2S"
-    }
+      // You can add multiple tracking ids and a pageview event will be fired for all of them.
+      trackingId: "G-C170X38Z2S", // Google Analytics / GA
+      // This object is used for configuration specific to this plugin
+      pluginConfig: {
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+      },
+    },
   },
   'gatsby-plugin-postcss',
   `gatsby-plugin-netlify`,

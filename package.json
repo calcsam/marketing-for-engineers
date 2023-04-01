@@ -22,6 +22,7 @@
     "convertkit-react": "^1.5.5",
     "gatsby": "^5.7.0",
     "gatsby-plugin-google-analytics": "^5.7.0",
+    "gatsby-plugin-google-gtag": "^5.8.0",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-mdx": "^5.8.0",
     "gatsby-plugin-netlify": "^5.1.0",
