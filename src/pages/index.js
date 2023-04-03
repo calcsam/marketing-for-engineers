@@ -125,10 +125,10 @@ const IndexPage = ({ data }) => {
         <span className="font-semibold">Great marketing is rare.</span>
       </p>
       <p>
-        <b>Hi, I'm Sam</b>. <a href="https://twitter.com/calcsam">I'm an engineer</a> and founder. Six years ago I cofounded <a href="https://twitter.com/gatsbyjs">@gatsbyjs</a> to turn the open-source project into a company. We grew to a few million dollars in revenue, and sold to our largest competitor, Netlify.
+        <b>Hi, I'm Sam</b>. <a href="https://twitter.com/calcsam">I'm an engineer</a> and founder. Six years ago I cofounded <a href="https://twitter.com/gatsbyjs">@gatsbyjs</a>. We grew to a few million dollars in revenue, and sold to our largest competitor.
       </p>
       <p>
-        As Gatsby matured, I ended up doing more and more "marketing" things. Over time, I found that great marketing required a similar kind of analytical depth, clarity of purpose, polish, and iteration as great engineering.
+        Over time, I got pulled more and more into marketing. It was confusing at first, full of unfamiliar acronyms and  Turns out great marketing, like great engineering, requires analytical depth, polish, and iteration.
       </p>
       <p>
         I'm sharing some things I learned along the way. If you're an engineer who's interested in marketing, you should sign up.

@@ -7,22 +7,35 @@ module.exports = {
     siteUrl: `https://www.marketingforengineers.io`
   },
   plugins: [
-  {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      // You can add multiple tracking ids and a pageview event will be fired for all of them.
-      trackingId: "G-C170X38Z2S", // Google Analytics / GA
-      // This object is used for configuration specific to this plugin
-      pluginConfig: {
-        // Puts tracking script in the head instead of the body
-        head: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "GA-TRACKING_ID", // Google Analytics / GA
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          optimize_id: "G-C170X38Z2S",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          // Defaults to https://www.googletagmanager.com
+          origin: "marketingforengineers.io",
+          // Delays processing pageview events on route update (in milliseconds)
+          delayOnRouteUpdate: 0,
+        },
       },
     },
-  },
   'gatsby-plugin-postcss',
   `gatsby-plugin-netlify`,
   `gatsby-plugin-mdx`,

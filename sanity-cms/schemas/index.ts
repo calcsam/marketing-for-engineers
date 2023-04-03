@@ -31,6 +31,9 @@ const post = {
           {
             type: 'block',
           },
+          {
+            type: 'image'
+          }
         ],
       },
     ],
