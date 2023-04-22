@@ -50,7 +50,8 @@ export default function BlogPostTemplate({
           value={_rawBody} 
           components={{
             types: {
-              table: TableComponent
+              table: TableComponent,
+              image: ({value}) => <img src={value.imageUrl} />,
             }
           }}
         />
