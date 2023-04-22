@@ -3,7 +3,32 @@ import { graphql } from "gatsby"
 import Layout from "../layout.js"
 import BlockContent from "@sanity/block-content-to-react"
 import {PortableText} from '@portabletext/react'
+import urlBuilder from '@sanity/image-url'
+import {getImageDimensions} from '@sanity/asset-utils'
 
+// Barebones lazy-loaded image component
+const SampleImageComponent = ({value, isInline}) => {
+  const {width, height} = getImageDimensions(value)
+  return (
+    <img
+      src={urlBuilder()
+        .image(value)
+        .width(isInline ? 100 : 800)
+        .fit('max')
+        .auto('format')
+        .url()}
+      alt={value.alt || ' '}
+      loading="lazy"
+      style={{
+        // Display alongside text if image appears inside a block text span
+        display: isInline ? 'inline-block' : 'block',
+
+        // Avoid jumping around with aspect-ratio CSS property
+        aspectRatio: width / height,
+      }}
+    />
+  )
+}
 
 const TableRowComponent = ( { row: cells, head } ) => (
   head ?
@@ -51,7 +76,7 @@ export default function BlogPostTemplate({
           components={{
             types: {
               table: TableComponent,
-              image: ({value}) => <img src={value.imageUrl} />,
+              image: SampleImageComponent,
             }
           }}
         />
