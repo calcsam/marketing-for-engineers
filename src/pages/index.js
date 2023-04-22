@@ -154,7 +154,7 @@ export const Head = () => <title>Home Page</title>
 
 export const pageQuery = graphql`
   query HomePageQuery {
-    allSanityPost(sort: { fields: publishedAt, order: DESC }) {
+    allSanityPost(sort: {publishedAt: DESC}) {
       nodes {
         title
         publishedAt(formatString: "MMMM DD, Y")

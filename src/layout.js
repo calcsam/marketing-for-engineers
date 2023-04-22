@@ -13,7 +13,7 @@ const pageStyles = {
   }
 
 const Layout = ({ children }) => (  
-    <main style={pageStyles} className="container mx-auto px-4 sm:px-6 max-w-2xl prose prose-m lg:prose-lg prose-md prose-headings:font-sans prose-headings:font-bold prose-a:text-blue-600 prose-img:rounded-md prose-img:shadow-lg mt-8">
+    <main style={pageStyles} className="container mx-auto px-4 sm:px-6 max-w-2xl prose prose-m lg:prose-lg prose-md prose-headings:font-sans prose-headings:font-bold prose-a:text-blue-600 prose-img:rounded-md prose-img:shadow-lg mt-8 border-spacing-2">
         { children }
         <ConvertKitForm template='clare' formId={MY_FORM_ID} />
     </main>

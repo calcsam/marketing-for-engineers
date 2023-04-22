@@ -17,7 +17,7 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.15",
     "@fontsource/syne": "^4.5.13",
-    "@portabletext/react": "^2.0.2",
+    "@portabletext/react": "^2.0.3",
     "@sanity/block-content-to-react": "^3.0.0",
     "convertkit-react": "^1.5.5",
     "gatsby": "^5.7.0",
