@@ -11,14 +11,16 @@ const SampleImageComponent = ({value, isInline}) => {
   const {width, height} = getImageDimensions(value)
   return (
     <img
-      src={urlBuilder()
-        .image(value)
-        .width(isInline ? 100 : 800)
-        .fit('max')
-        .auto('format')
-        .url()}
+      src={value.asset.url}
+        
+        //urlBuilder()
+        //.image(value)
+        //.width(isInline ? 100 : 800)
+        //.fit('max')
+        //.auto('format')
+        //.url()}
       alt={value.alt || ' '}
-      loading="lazy"
+//      loading="lazy"
       style={{
         // Display alongside text if image appears inside a block text span
         display: isInline ? 'inline-block' : 'block',
