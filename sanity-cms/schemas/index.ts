@@ -33,7 +33,10 @@ const post = {
           },
           {
             type: 'image'
-          }
+          },
+          {
+            type: 'table',
+          },
         ],
       },
     ],
